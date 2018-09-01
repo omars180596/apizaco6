@@ -1,0 +1,202 @@
+.single-image {
+    background-size: cover;
+	/*height: auto;
+	max-width: 550px;*/
+	height: 350px!important;
+	max-width: 560px!important;
+	background-position: center;
+	border: 0.8em solid #fff;
+	box-shadow: 0px 0px 15px #adadad;
+	position: relative;
+	z-index:0;
+}
+
+
+/*.single-image {     height: 350px!important;     max-width: 560px!important; }   .img-blur {   height: 328px;   width:auto; }*/
+
+.img-blur {
+	margin: 0 auto;
+	/*height: 100%;*/
+	/*width: 100%;*/
+	height: 328px;
+	width:auto;
+	z-index: 2;
+	position: relative;
+}
+
+.blur {
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	z-index: 1;
+	top: 0;
+}
+
+.single-title {
+	background:#7B191E;
+	position:absolute;
+	bottom:0em;
+	width: 100%;
+}
+.single-title h2 {
+	bottom:0em;
+	font-weight: 500;
+	padding:0.6em 1em;
+	font-size: 1.5em;
+	color:#fff;
+}
+
+#share {
+	margin:1em 0em;
+}
+
+.single-description {
+	margin:1em 0em;
+}
+
+
+ /*.affix {
+      top: 20px;
+      z-index: 9999 !important;
+  }*/
+
+.single-description img {
+    /*width: 100%;
+    height: 100%;
+    border: 0.6em solid #acacac;
+    margin: 1.3em 0em;*/
+}
+
+.single-detail {
+	margin:1em 0em;
+	font-size: 0.9em;
+}
+
+.single-detail ul {
+	padding-left:0em;
+	border-bottom:0.1em solid #ececec;
+	padding-bottom:1em;
+}
+
+.single-detail li {
+	padding:0.3em 1em;
+	color:#413e3e;
+	background-color:#d4d4d4;
+	/*background:#686363;
+	color:#fff;
+	border-bottom:0.3em solid #353030;*/
+	font-size: 1em;
+	margin-right:1em;
+	display:inline-block;
+}
+
+.single-detail span {
+	font-weight: 700;
+}
+
+.space {
+	padding:1em 1em;
+}
+
+.owl-gallery .item {
+    height: 180px;
+    background-size: cover;
+    border: 0.3em solid #acacac;
+}
+
+.owl-banner-right {
+    margin: 1em 0em;
+}
+
+/* Columnistas firma */
+.signature .img {
+	height: 150px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.signature {
+	margin:1em 0em;
+	padding:0.6em 0em;
+	border:0.4em solid #fff;
+	box-shadow: 0px 7px 10px #E0E0E0;
+	background-color:#f9f9f9;
+}
+.signature .information {
+	overflow: hidden;
+	max-height: 100px;
+	overflow-y:scroll;
+}
+.signature h3 {
+	margin:0.3em 0em;
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.owl-banner-right {
+		display: none;
+	}
+
+  .single-image {
+		height: auto!important;
+	}
+
+  .img-blur {
+    height: auto;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+  .zoomContainer {
+        display: none;
+    }
+	.single-image {
+		height: auto!important;
+	}
+
+  .img-blur {
+    height: auto;
+  }
+	.single-description iframe, .single-description img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.columnistas .img {
+		height: 140px;
+	}
+
+	.owl-banner-right {
+		display: none;
+	}
+
+	.single-detail li {
+		margin:0.4em 0em;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "546390035328",
+    "firebase_url": "https://apizaco-16276.firebaseio.com",
+    "project_id": "apizaco-16276",
+    "storage_bucket": "apizaco-16276.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546390035328:android:8a1aa7fa6ae91b2a",
+        "android_client_info": {
+          "package_name": "com.apizaco.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546390035328-tokk8hj4mmdkg6otq4ceqjn7k0l05a3n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAylL3HRIAtm-u1U8WeqxCxf8OW5Kav-2A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

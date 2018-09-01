@@ -1,0 +1,7 @@
+DivTutiempo=document.getElementById('TT_JytALxYhtUzazBFU7fwDjjDjj9aUMz8FLdkYEcCoKED');
+if(DivTutiempo)
+{
+DivTutiempo.style.cssText = 'width:242px; height:50px; color:#000000; overflow:hidden;';
+DivTutiempo.innerHTML = '<iframe id="TTF_JytALxYhtUzazBFU7fwDjjDjj9aUMz8FLdkYEcCoKED" src="https://www.tutiempo.net/s-widget/tt_NXx8MzgyNjI2fG58bnxufDU1MzUwfDIwfDEwfDF8MXwyfDB8MjV8c3xzfG58RTg2RjZGfDcxQjlGMHx8fDAwMDAwMHw1MHwzfDU3fDUwfDEyOHwyMHw2OHwxfDI0Mnw1MHw0MHwzNHwxNHwxNHwyNnw0OHwyNnxDcnwxfA%2C%2C" frameborder="0" scrolling="no" width="100%" height="100%" allowtransparency="allowtransparency" style="overflow:hidden;"></iframe>';
+}
+else {alert("Error en la carga del API del tiempo\nEl código introducido no es correcto\nPara mas información: www.tutiempo.net");}

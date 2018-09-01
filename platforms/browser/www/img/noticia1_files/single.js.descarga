@@ -1,0 +1,118 @@
+$(document).ready(function(){
+
+	$('#banner-sticky').stickThis({
+	    top:80,
+	    minscreenwidth:800,
+	    pushup:'.push-up'
+	});
+
+	// Zoom
+	function initZoom() {
+    $("#zoom_05").ezPlus({
+					zoomType				: "lens",
+					lensShape : "round",
+					scrollZoom: true,
+	        easing : true,
+	        responsive : true,
+	        zoomWindowFadeIn: 500,
+	        zoomWindowFadeOut: 500,
+	        touchEnabled: false
+	    });
+	}
+	// act on resize
+	$(window).resize(function() {
+	    var wwidth = $(window).width();
+	    if (wwidth < 1199) {
+	        $('.zoomContainer').remove();
+	    }
+	    if (wwidth >= 1199) {
+	        initZoom();
+	    }
+	});
+
+	$(function(){
+	    initZoom();
+	// other stuff
+	});
+
+
+
+	// Facebook Comments
+	window.fbAsyncInit = function() {
+	    FB.init({
+	      appId            : '224743084734954',
+	      autoLogAppEvents : true,
+	      xfbml            : true,
+	      version          : 'v2.11'
+	    });
+	  };
+
+  	(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.11&appId=224743084734954&autoLogAppEvents=1';
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+
+	$("#share").jsSocials({
+		showLabel: false,
+    	showCount: false,
+        shares: ["email", "twitter", "facebook", "linkedin","whatsapp"]
+    });
+
+    // Galería Fancybox
+    $("[data-fancybox]").fancybox({
+		// Options will go here
+	});
+
+	// Owl Carousel
+	$('.owl-gallery').owlCarousel({
+	    loop:false,
+	    margin:10,
+	    autoplay:true,
+	    autoplayTimeout:2000,
+	    autoplayHoverPause:true,
+	    responsiveClass:true,
+	    responsive:{
+	        0:{
+	            items:1,
+	            nav:true
+	        },
+	        600:{
+	            items:3,
+	            nav:false
+	        },
+	        1000:{
+	            items:3,
+	            nav:false,
+	            dots:true,
+	            loop:false
+	        }
+	    }
+	});
+
+
+	// Banner publicidad derecho
+	$('.owl-banner-right').owlCarousel({
+	    loop:true,
+	    margin:10,
+	    nav:true,
+	    dots:true,
+	    autoplay:true,
+	    autoplayTimeout:2000,
+	    autoplayHoverPause:true,
+	    responsiveClass:true,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        600:{
+	            items:1
+	        },
+	        1000:{
+	            items:1
+	        }
+	    }
+	});
+});
